@@ -56,7 +56,7 @@ By default, OpenAPI documentation is available at `/api/docs` endpoint.
 - [src/api/schema.py](src/api/schema.py) - Define tag, common request/response schema or anything eles here.
 - [src/api/controller](src/api/controllers/) - Create any route class in this folder
 
-For instance, create [`echo_post.py`](src/api/controllers/echo/echo_post.py) as a new route by creating a new file in `src/api/controllers/echo` folder. Then, add the route to [`src/api/register_routes.py`](src/api/register_routes.py).
+For instance, create [`echo_post.py`](src/api/controllers/echo/echo_post.py) as a new route by creating a new file in `src/api/controllers/echo` folder. Then, after finish your code in new route, don't forget to adding new route to [`src/api/register_routes.py`](src/api/register_routes.py) for register route. Otherwise, route wouldn't reached.
 
 ### Simple route example
 ```python
